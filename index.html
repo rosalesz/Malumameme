@@ -24,6 +24,13 @@
             box-shadow: 5px 5px 0px #000000;
         }
 
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                max-width: 400px;
+                padding: 15px;
+            }
+        }
 
         .content {
             display: flex;
@@ -33,6 +40,14 @@
             padding: 20px;
             border: 2px inset #808080;
             min-height: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                gap: 10px;
+                padding: 10px;
+                min-height: 180px;
+            }
         }
 
         .image-container {
@@ -46,11 +61,25 @@
             border: 2px solid #000000;
         }
 
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
         .text-container {
             flex-grow: 1;
             font-size: 16px;
             color: #000000;
             padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .text-container {
+                font-size: 14px;
+                padding: 5px;
+            }
         }
 
         .button-container {
@@ -77,7 +106,7 @@
     </style>
 </head>
 <body>
-    <audio id="backgroundMusic" loop>
+    <audio id="backgroundMusic">
         <source src="hawai.mp3" type="audio/mpeg">
     </audio>
 
